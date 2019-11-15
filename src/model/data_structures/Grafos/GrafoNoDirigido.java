@@ -157,7 +157,7 @@ public class GrafoNoDirigido<K, V>
 		((Vertice) vertices.get(v)).marcar();      
 		cantMarcada++;   
 		Iterable<K> list = adj((K)((Integer) v.darId()));
-		
+
 		for (K w : list)
 		{
 			Vertice actual = (Vertice) vertices.get(w);
@@ -214,6 +214,17 @@ public class GrafoNoDirigido<K, V>
 		K[] ccL = (K[]) ccDat.darKeys();
 		Iterable<K> cc = Arrays.asList(ccL);
 		return cc;
+	}
+
+	public Informacion getInfoVertex(Vertice darDestino) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public Object darVertices() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
